@@ -51,7 +51,7 @@ python3 tempsh.py https://temp.sh/AwDs/filename.txt
 
 ### If installed system-wide:
 ```bash
-tempsh -f filename.txt
+tempsh filename.txt
 ```
 
 ### Command-line options:
