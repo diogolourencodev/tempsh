@@ -41,7 +41,12 @@ A simple Python command-line tool to upload files anonymously to [temp.sh](https
 
 ### Basic usage:
 ```bash
-python3 tempsh.py -f filename.txt
+python3 tempsh.py filename.txt
+```
+
+### Download temp.sh file
+```bash
+python3 tempsh.py https://temp.sh/AwDs/filename.txt
 ```
 
 ### If installed system-wide:
@@ -50,15 +55,24 @@ tempsh -f filename.txt
 ```
 
 ### Command-line options:
-- `-f, --file`: Specify the file to upload (required)
+- `file`: Specify the file to upload (required)
 
-## Example
+## Example upload
 
 ```bash
-$ tempsh -f document.pdf
+$ tempsh document.pdf
 
 [*] Uploading document.pdf...
 [*] https://temp.sh/abc123/document.pdf
+```
+
+## Example downlaod
+
+```bash
+$ tempsh https://temp.sh/aQdS/document.pdf
+
+[*] Downloading file document.pdf...
+[*] Saved on document.pdf
 ```
 
 ## Dependencies
